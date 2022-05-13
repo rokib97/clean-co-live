@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
   return (
     <div class="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -24,27 +24,45 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               <li>
-                <a>Navbar Item 1</a>
+                <a className="rounded-lg">Home</a>
               </li>
               <li>
-                <a>Navbar Item 2</a>
+                <a className="rounded-lg">About</a>
+              </li>
+              <li>
+                <a className="rounded-lg">Services</a>
+              </li>
+              <li>
+                <a className="rounded-lg">Contact</a>
+              </li>
+              <li>
+                <a className="rounded-lg">Login</a>
               </li>
             </ul>
           </div>
         </div>
+        {children}
       </div>
       <div class="drawer-side">
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
           <li>
-            <a>Sidebar Item 1</a>
+            <a>Home</a>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Services</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+          <li>
+            <a>Login</a>
           </li>
         </ul>
       </div>
