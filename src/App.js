@@ -8,17 +8,15 @@ import Services from "./pages/Services";
 
 function App() {
   return (
-    <>
-      <Navbar>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/services" element={<Services />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-        </Routes>
-      </Navbar>
-    </>
+    <Navbar>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/services" element={<Services />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+      </Routes>
+    </Navbar>
   );
 }
 
