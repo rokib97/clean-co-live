@@ -64,12 +64,16 @@ const Navbar = ({ children }) => {
                   tabindex="0"
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  {/* <li>
-                    <a>Item 1</a>
+                  <li>
+                    <NavLink to="/contact" className="rounded-lg">
+                      Quick Book
+                    </NavLink>
                   </li>
                   <li>
-                    <a>Item 2</a>
-                  </li> */}
+                    <NavLink to="/login" className="rounded-lg">
+                      Pre Book
+                    </NavLink>
+                  </li>
                 </ul>
               </li>
               <label class="swap swap-rotate">
@@ -124,6 +128,24 @@ const Navbar = ({ children }) => {
               Login
             </NavLink>
           </li>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+          >
+            <div class="collapse-title text-xl font-medium">Book Now</div>
+            <div class="collapse-content">
+              <li>
+                <NavLink to="/contact" className="rounded-lg">
+                  Quick Book
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/login" className="rounded-lg">
+                  Pre Book
+                </NavLink>
+              </li>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
