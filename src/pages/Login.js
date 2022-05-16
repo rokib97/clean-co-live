@@ -3,7 +3,7 @@ import React from "react";
 const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-accent">
-      <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div class="card flex-shrink-0 w-full max-w-sm  shadow-2xl bg-base-100">
         <div class="card-body">
           <h1 className="text-2xl text-center">Login</h1>
           <div class="form-control">
