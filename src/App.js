@@ -27,8 +27,8 @@ function App() {
         </Route>
         <Route element={<AdminRoute />}>
           <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="/dashboard/add-admin" element={<AddAdmin />} />
-            <Route path="/dashboard/add-service" element={<AddService />} />
+            <Route path="add-admin" element={<AddAdmin />} />
+            <Route path="add-service" element={<AddService />} />
           </Route>
         </Route>
       </Routes>
