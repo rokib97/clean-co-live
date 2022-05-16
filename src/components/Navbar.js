@@ -96,7 +96,7 @@ const Navbar = ({ children }) => {
                   tabindex="0"
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li>
+                  <li className="mb-1">
                     <NavLink to="/contact" className="rounded-lg">
                       Quick Book
                     </NavLink>
