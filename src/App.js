@@ -5,6 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import AdminRoute from "./authentication/AdminRoute";
 import PrivateRoute from "./authentication/PrivateRoute";
 import Navbar from "./components/Navbar";
+import AddAdmin from "./pages/Dashboard/AddAdmin";
+import AddService from "./pages/Dashboard/AddService";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import { privateRoutes } from "./routes/privateRoutes";
 import { publicRoute } from "./routes/publicRoute";
@@ -24,7 +26,10 @@ function App() {
           ))}
         </Route>
         <Route element={<AdminRoute />}>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="/dashboard/add-admin" element={<AddAdmin />} />
+            <Route path="/dashboard/add-service" element={<AddService />} />
+          </Route>
         </Route>
       </Routes>
     </Navbar>
