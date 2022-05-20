@@ -2,7 +2,7 @@ import React from "react";
 import bucketgirl from "../../assests/images/bucketgirl.png";
 const Landing = () => {
   return (
-    <dev className="relative">
+    <div className="relative">
       <div class="hero h-screen lg:h-[60vh] bg-accent z-10 mt-16">
         <div class="hero-content flex-col lg:flex-row">
           <div>
@@ -90,7 +90,7 @@ const Landing = () => {
         </div>
         <button className="btn btn-primary mt-5">REQUEST A QOUTE</button>
       </div>
-    </dev>
+    </div>
   );
 };
 
